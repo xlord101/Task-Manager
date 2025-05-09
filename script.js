@@ -23,11 +23,6 @@ $(document).ready(function() {
         const listItem = $(this).closest('li');
         const taskText = listItem.find('.task-text');
         const newText = prompt('Edit task:', taskText.text());
-        
-        if (newText !== null && newText.trim() !== '') {
-            taskText.text(newText);
-            saveTasks();
-        }
     });
     
     function addTask(text) {
